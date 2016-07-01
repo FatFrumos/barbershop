@@ -1,0 +1,139 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html  class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru"> <!--<![endif]-->
+    <head lang="ru">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Барбершоп "Бородинский"</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+
+        <header class="main-header">
+            <div class="container clearfix">
+                <nav class="main-nav">
+                    <ul>
+                        <li class="active"><a href="#">Главная</a></li>
+                        <li><a href="#">Информация</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Прайс-лист</a></li>
+                        <li><a href="#">Магазин</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="user-block">
+                    <a href="#" class="login">Вход</a>
+                </div>
+            </div>
+        </header>
+        
+        <div class="container main-container">
+            <div class="logo">
+                <img src="img/logo.png" width="368" height="205" alt="Бородинский">
+            </div>
+            <div class="features clearfix">
+                <div class="features-item">
+                    <div class="features-title">Быстро</div>
+                    <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладетель стильной стрижки-минутки!</p>
+                </div>
+                <div class="features-item">
+                    <div class="features-title">Круто</div>
+                    <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладетель стильной стрижки-минутки!</p>
+                </div>
+                <div class="features-item">
+                    <div class="features-title">Дорого</div>
+                    <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладетель стильной стрижки-минутки!</p>
+                </div>
+            </div>
+            
+            <div class="index-content clearfix">
+                <div class="content-column-left">
+                    <h2 class="content-column-title">Новости</h2>
+                    <ul class="news-preveiw">
+                        <li>
+                            Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки<br>
+                            <time datetime="2014-06-27T19:00:00+02:00">14 апреля</time>
+                        </li>
+                        <li>
+                            Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки<br>
+                            <time datetime="2014-06-27T19:00:00+02:00">14 апреля</time>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn">Все новости</a>
+                </div>
+                
+                <div class="content-column-right">
+                    <h2 class="content-column-title">Фотогалерея</h2>
+                    <div class="gallery">
+                        <figure class="gallery-content">
+                             <img src="img/gallery1.jpg" alt="Бородинский">   
+                        </figure>
+                        <button class="btn gallery-prev">Назад</button>
+                        <button class="btn gallery-next">Вперед</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="index-content clearfix">
+                  <div class="content-column-left">
+                      <div class="main-contacts">
+                          <h2 class="content-column-title">КОНТАКТНАЯ     ИНФОРМАЦИЯ</h2>
+                          <p>Barbershop «borodinski»<br>
+                          Адрес: г. Москва, ул. Собаки павлова, д. 13<br>
+                              Телефон: +7 (495) 666-02-666<br></p>
+                          
+                          <p>Время работы:<br>
+                          Пн — пт: с 10:00 до 22:00<br>
+                          Сб — вс: с 10:00 до 19:00</p>
+                      </div>
+                      <a href="#" class="btn">Как проехать?</a>
+                      <a href="#" class="btn">Обратная связь</a>
+                  </div>
+                  <div class="content-column-right">
+                      <h2 class="content-column-title">Записаться</h2>
+                      <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+                      <form action="/echo" method="post">
+                          <input type="text" name="date" value="" placeholder="Дата">
+                          <input type="text" name="time" value="" placeholder="Время">
+                          <input type="text" name="name" value="" placeholder="Имя">
+                          <input type="tel" name="phone" value="" placeholder="Телефон">
+                          <button type="submit" class="btn">Отправить</button>
+                      </form>
+                  </div>
+              </div>
+        </div>
+        <footer class="main-footer">
+            <div class="container clearfix">
+                <div class="footer-contact">
+                    <p>BARBERSHOP «BORODINSKI»<br>
+                    АДРЕС: Г. МОСКВА, УЛ. СОБАКИ ПАВЛОВА, Д. 13<br>
+                        ТЕЛЕФОН: +7 (495) 666-02-666  </p>  
+                </div>
+                <div class="footer-social">
+                    <p>Давайте дружить!</p>
+                    <a href="#" class="social-btn social-btn-vk">Вк</a>
+                    <a href="#" class="social-btn social-btn-fb">Фб</a>
+                    <a href="#" class="social-btn social-btn-inst">Инста</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>Дизайн сайта</p>
+                    <a class="btn" href="#">GLUKHANKO.RU</a>
+                </div>
+            </div>
+        </footer>
+        
+<!--        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+<!--        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>-->
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
