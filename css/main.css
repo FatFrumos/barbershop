@@ -53,6 +53,136 @@ textarea {
 
 
 /* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    
+    
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+/* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
@@ -280,8 +410,9 @@ body {
     margin-top: 60px;
     padding-top: 60px;
     padding-bottom: 40px;
+    color: #fff;
     
-    background: #252525;
+    background: #252525 url("../img/footer-bg.jpg");
 }
 
 .footer-contact {
@@ -363,6 +494,7 @@ body {
 .main-header {
     background-color: #000;
     margin-bottom: 60px;
+    color: #fff;
 }
 
 .main-nav ul {
@@ -442,130 +574,135 @@ body {
     opacity: 1;
 }
 
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-
+.inner-body {
+    background: #f7f4f1 url("../img/inner-bg.jpg");
+    color: #000;
 }
 
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-
+.breadcrumbs {
+    margin-bottom: 60px;
 }
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
+.breadcrumbs ul{
     padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
     margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
 }
 
-.invisible {
-    visibility: hidden;
+.breadcrumbs li{
+    position: relative;
+    display: inline;
+    list-style: none;
+    padding-right: 40px;
+    
 }
 
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
+.breadcrumbs a {
+    text-decoration: none;
+    color: #000;
 }
 
-.clearfix:after {
-    clear: both;
+.breadcrumbs li::after {
+    position: absolute;
+    bottom: 6px;
+    right: 15px;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #000;
+    transform: rotate(45deg);
 }
 
-.clearfix {
-    *zoom: 1;
+.breadcrumbs li:last-child::after {
+    display: none;
 }
 
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
+.active-link {
+    opacity: .6;
+    cursor: default;
+}
 
-@media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+.price-list-h {
+    font-size: 30px;
+    line-height: 42px;
+}
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+.big-heading {
+    text-align: center;
+    margin-bottom: 73px;
+}
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+.big-heading h2 {
+    position: relative;
+    display: inline;
+    padding: 0 25px;
+    font-size: 48px;
+    line-height: 48px;
+    z-index: 1;
+    background: #f7f4f1 url("../img/inner-bg.jpg");
+}
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+.big-heading::after {
+    display: block;
+    position: relative;
+    top: -25px;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #000;
+    z-index: 0;
+}
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
+.inner-content-column-left {
+    float: left;
+    width: 400px;
+}
 
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+.inner-content-column-right {
+    float: right;
+    width: 460px;
+}
 
-    thead {
-        display: table-header-group;
-    }
+.prices-table td{
+    border: 3px solid black;
+    padding: 12px 15px;
+    width: 50%;
+}
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+.prices-table td:last-child {
+    text-align: center;
+}
 
-    img {
-        max-width: 100% !important;
-    }
+.prices-table {
+    width: 100%;
+}
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
+.custom-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+.custom-list li {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.custom-list li::before {
+    position: absolute;
+    bottom: 8px;
+    left: 2px;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #000;
+    transform: rotate(45deg);
+}
+
+.inner-content-columns {
+    margin-bottom: 26px;
+}
+
+.inner-content-columns:last-child {
+    margin: 0;
 }
