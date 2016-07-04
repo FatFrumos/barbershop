@@ -421,6 +421,11 @@ body {
     margin-right: 100px;
 }
 
+.footer-contact a {
+    color: #fff;
+/*    text-decoration: none;*/
+}
+
 .footer-social {
     float: left;
     text-align: center;
@@ -831,3 +836,8 @@ input::-moz-placeholder { color: #000; }
     color: #000;
     display: none;
 }
+
+.modal-show {
+    display: block;
+}
+
